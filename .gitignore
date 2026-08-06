@@ -1,0 +1,11 @@
+bin/
+binary-files/
+dump-files/
+nutch-out/
+target/
+temp-data-dump/
+top-sites-list/
+.classpath
+.project
+.settings/
+
