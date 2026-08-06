@@ -4,7 +4,7 @@ MidSearch is my attempt at building a search engine entirely in Java, piggybacki
 It is built with no external libraries beyond Apache Nutch. 
 
 It aims to lower RAM usage by mainly storing data in a binary storage format, reducing the need to keep the entire index in memory.
-This also improves search performance by using an **O(w * (log(n) + m) + (wm) * log(wm))** index design and lookup algorithm, **n** being the total amount of unique terms, **m** being the number of URLs chosen to be outputted (generally being a low number, 10 by default), and **w** being the amount of words in the query.
+This also improves search performance by using an **O(w * (log(n) + m) + (wm) * log(wm))** lookup algorithm, **n** being the total amount of unique terms, **m** being the number of URLs chosen to be outputted (generally being a low number, 10 by default), and **w** being the amount of words in the query.
 
 ## Architecture:
 MidSearch is built with a pipeline architecture, where each main step of the pipeline is included in the same directory. It processes crawl data through multiple stages
