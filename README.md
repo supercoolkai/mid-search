@@ -16,7 +16,7 @@ including parsing, ranking, and conversion to binary.
 2. Prepare the link graph data for PageRank: There are 3 files used in this: A raw list of each unique URL, a file containing every outlink associated with a URL, and a hash table mapping each URLID to the location of its corresponding outlink entry.
 
 **Ranking:** This converts the parsed data into a classic inverted index, associating each term with every URL under it, and associating each URL with a score for that term. The score has two components:
-1. BM25: Calculates how relevant a document is to a query based off of this formula: ![BM25 Formula](docs/BM25Formula.png)
+1. BM25: Calculates how relevant a document is to a query based off of this formula with a few minor tweaks: ![BM25 Formula](docs/BM25Formula.png)
 2. PageRank: Creates a directed, weighted graph where each URL receives a score based on incoming links and the PageRank scores of the pages linking to it. This calculation is repeated 45 times, but the iteration count can be adjusted.
 
 **Binary Conversion:** This essentially converts the given ranking into binary, split into 3 groups:
