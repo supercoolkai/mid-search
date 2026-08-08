@@ -427,5 +427,3 @@ public class BM25FromDump {
     }
   }
 }
-
-// "What's a high tier vibe coder to a low tier thinker"
