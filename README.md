@@ -1,4 +1,4 @@
-# **MIDSEARCH: The Middest Search Engine of Them All**
+# **MIDSEARCH: The most mediocre-mediocre search engine out there**
 
 MidSearch is my attempt at building a search engine entirely in Java, piggybacking off of Apache Nutch's output (formatted as a dump file).
 It is built with no external libraries beyond Apache Nutch. 
