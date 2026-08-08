@@ -1,5 +1,3 @@
-// What's a high tier vibe coder to a low tier thinker
-
 // Lemmatizes inputted words for easy access to lemmatization
 package structures;
 
